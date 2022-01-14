@@ -9,6 +9,9 @@
 - https://nvd.nist.gov/vuln/detail/CVE-2021-46070
 - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46070
 
+### Description:
+A Stored Cross Site Scripting (XSS) vulnerability exists in Vehicle Service Management System 1.0 via the Service Requests Section in login panel.
+
 ### Exploit:
 1. Login to the admin panel http://localhost/vehicle_service/admin
 2. Navigate to Service Requests section and click on Create New button. 
@@ -23,3 +26,9 @@
 6. Malicious javascript code triggered.
 7. Navigate to Report section.
 8. Malicious javascript code triggered.
+
+### Impact:
+An attacker can able to inject malicious JavaScript code in Service Requests Section.
+
+### Mitigation:
+It is recommended to sanitize all the input fields throughout the application.
